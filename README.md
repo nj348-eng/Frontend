@@ -2,6 +2,13 @@
 
 This repository contains a Vite + React frontend for the Research Lab Manager app.
 
+## Prerequisites
+
+- Node.js 18 or higher (required for Vite 5.x)
+- npm (comes with Node.js)
+
+If you're using `nvm`, you can run `nvm use` to automatically switch to the correct Node.js version (defined in `.nvmrc`).
+
 Features provided:
 - Sidebar listing database tables (from `src/utils/schema.js`)
 - Dynamic table view with rows displayed in a responsive table
@@ -11,11 +18,11 @@ Features provided:
 
 Run locally:
 
-```powershell
-cd "c:\Users\niyam\DMSD Project"
+```bash
 npm install
 npm run dev
 ```
+The development server will start and you can access the app at `http://localhost:5173` (or the port shown in the terminal).
 
 Notes:
 - The frontend calls backend endpoints under `/api/<TABLE>` (GET/POST/PUT/DELETE). You should provide a backend or a proxy to handle those routes during development.
